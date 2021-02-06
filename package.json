@@ -1,0 +1,22 @@
+{
+  "name": "bisect-example-rescript",
+  "dependencies": {
+    "@glennsl/bs-jest": "^0.6.0",
+    "bisect_ppx": "^2.4.0",
+    "bs-platform": ">= 8.2.0"
+  },
+  "scripts": {
+    "build": "bsb -make-world",
+    "test": "rm -f *.coverage && jest",
+    "clean": "bsb -clean-world"
+  },
+  "jest": {
+    "verbose": false,
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "setupFilesAfterEnv": [
+      "bisect_ppx/lib/js/src/runtime/bucklescript/jest.js"
+    ]
+  }
+}

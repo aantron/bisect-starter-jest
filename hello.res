@@ -1,0 +1,12 @@
+let hello = () => {
+  Random.self_init()
+
+  if Random.int(2) == 0 {
+    print_endline("Hello, world!")
+  }
+  else {
+    print_endline("We come in peace.")
+  }
+
+  42
+}

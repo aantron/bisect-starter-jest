@@ -1,0 +1,23 @@
+{
+  "name": "bisect-example-rescript",
+  "bs-dependencies": [
+    "bisect_ppx",
+    "@glennsl/bs-jest"
+  ],
+  "bs-dev-dependencies": [
+    "@glennsl/bs-jest"
+  ],
+  "ppx-flags": [
+    ["bisect_ppx/ppx", "--exclude-files", ".*_test\\.res$$"]
+  ],
+  "refmt": 3,
+  "sources": [
+    {
+      "dir": "."
+    },
+    {
+      "dir": "__tests__",
+      "type": "dev"
+    }
+  ]
+}
